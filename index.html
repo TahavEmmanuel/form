@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>learning forms using bootstrap</title>
+
+  <!-- Online bootstrap stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Offline stylesheets -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  <!-- Offline bootstrap script -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <!-- Online Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container p-3">
+      <div class="form-header">
+        <h1 class="main-heading">How can we help you?</h1>
+        <h5 class="support-heading">Send us a message today</h5>
+      </div>
+      <div class="row justify-content-center pt-5">
+        <form class="col-lg-10 col-md-10"action="index.html" method="post">
+          <div class="row gx-3">
+            <div class="form-group col-lg-6 col-md-6">
+              <label for="selectEnquiry" class="col-form-label col-form-label-sm">Choose Enquiry</label>
+              <select class="form-control form-control-sm" name=""  id="selectEnquiry">
+                <option value="">Feedback</option>
+                <option value="">Message</option>
+                <option value="">Report</option>
+              </select>
+            </div>
+
+            <div class="form-group col-lg-6 col-md-6">
+              <label for="yourSubject" class="col-form-label col-form-label-sm">Subject</label>
+              <input type="text" class="form-control form-control-sm" name="" value="" id="yourSubject">
+            </div>
+
+          </div>
+          <div class="form-group">
+            <label for="userMessage" class="col-form-label col-form-label-sm">Message</label>
+            <textarea name="name" class=" form-control form-control-sm" rows="8" cols="80" id="userMessage"></textarea>
+          </div>
+
+          <div class="row gx-3">
+            <div class="form-group col-lg-6 col-md-6">
+              <label for="firstName" class="col-form-label col-form-label-sm">First Name</label>
+              <input type="text" class="form-control form-control-sm" name="" value="" id="firstName">
+            </div>
+
+            <div class="form-group col-lg-6 col-md-6">
+              <label for="lastName" class="col-form-label col-form-label-sm">Last Name</label>
+              <input type="text" class="form-control form-control-sm" name="" value="" id="lastName">
+            </div>
+          </div>
+
+
+          <div class="row gx-3">
+            <div class="form-group col-lg-6 col-md-6">
+              <label for="userEmail" class="col-form-label col-form-label-sm">Email</label>
+              <input type="email" class="form-control form-control-sm" name="" value="" id="userEmail">
+            </div>
+
+            <div class="form-group col-lg-6 col-md-6">
+              <label for="userContact" class="col-form-label col-form-label-sm">Contact number</label>
+              <input type="text" class="form-control form-control-sm" name="" value="" id="userContact">
+            </div>
+          </div>
+
+          <button type="button" name="button" class="btn btn-primary">Submit</button>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
